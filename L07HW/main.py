@@ -7,4 +7,7 @@ main_menu.addOption("View network connections")
 main_menu.addOption("Display free ram and swap")
 main_menu.addOption("Quit")
 
-run_bash_cmd(main_menu.getInput())
+value = 0
+while value != -1 and value != -4:
+    value = main_menu.getInput()
+    run_bash_cmd(value)
